@@ -15,5 +15,5 @@ jobs:
       - uses: actions/checkout@v2 # Check out our repo so our workflow can access it
       - uses: helaili/jekyll-action@v2 # Run a Jekyll build, push built files back to repo
         with:
-          token: ${{ secrets.TMETZ2 }} # Token required write to our repo
+          token: ${{ secrets.GITHUB_TOKEN }} # Token required write to our repo
           target_branch: 'gh-pages' # Built files should be pushed to `gh-pages` branch
